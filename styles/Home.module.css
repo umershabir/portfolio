@@ -1,17 +1,138 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
+  background-color: #eef1ef;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.info {
+  text-align: center;
+}
+.shake {
+  font-weight: 500;
+  color: #ffb400;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  font-size: 1.5rem;
+}
+.contact a:hover {
+  transition: all ease-in 0.2s;
+  color: #ffb400;
+}
+.scrolldown {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.scrollanchor {
+  display: flex;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3a4443;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.scrolldownimage {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.scrolldownimage {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.offeringsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.myoffers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.offering {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.offering h3 {
+  font-weight: 500;
+}
+.counter {
+  background-color: #3a4443;
+  color: #bcc5bc;
+}
+.counterinner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.counterlist {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+.counterlist h2 {
+  color: #eef1ef;
+  margin-bottom: 0;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer {
   display: flex;
   flex: 1;
