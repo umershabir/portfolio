@@ -129,9 +129,21 @@
   margin: 0 auto;
 }
 .experience {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.exploremore {
+  border: 2px solid #3a4443;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: all ease-in 0.2s;
+}
+.exploremore:hover {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+  opacity: 0.9;
+  transform: translate(0px, -2px);
 }
 .footer {
   display: flex;

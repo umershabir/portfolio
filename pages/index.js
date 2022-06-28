@@ -14,6 +14,18 @@ const mywork = [
     heading: 'print for sit amet',
     link: '',
   },
+  {
+    image:
+      'https://assets.website-files.com/610baf44e0fca185ca8a93b0/610cdbabc8e4085df091aa78_Work%20Example%201.jpg',
+    heading: 'print for sit amet',
+    link: '',
+  },
+  {
+    image:
+      'https://assets.website-files.com/610baf44e0fca185ca8a93b0/610cdbabc8e4085df091aa78_Work%20Example%201.jpg',
+    heading: 'print for sit amet',
+    link: '',
+  },
 ]
 export default function Home() {
   return (
@@ -149,7 +161,7 @@ export default function Home() {
       <section className={styles.counter}>
         <div className={styles.counterinner}>
           <div className={styles.counterlist}>
-            <h2>0</h2>
+            <h2>1</h2>
             <p>PROJECTS COMPLETED</p>
           </div>
           <div className={styles.counterlist}>
@@ -157,7 +169,7 @@ export default function Home() {
             <p>YEARS EXPERIENCE</p>
           </div>
           <div className={styles.counterlist}>
-            <h2>0</h2>
+            <h2>1</h2>
             <p>HAPPY CLIENTS</p>
           </div>
         </div>
@@ -169,12 +181,12 @@ export default function Home() {
         </p>
         <div className={styles.experience}>
           {mywork.map((item, index) => (
-            <a href={item.link}>
+            <a href={item.link} style={{ width: '33.333%', margin: '1rem' }}>
               <div style={{ position: 'relative' }}>
                 <img
                   src={item.image}
                   alt=''
-                  style={{ width: 600, height: 300 }}
+                  style={{ width: '100%', height: 'auto', borderRadius: 8 }}
                 />
                 <span
                   style={{
@@ -190,6 +202,9 @@ export default function Home() {
             </a>
           ))}
         </div>
+        <Link href='/'>
+          <a className={styles.exploremore}>Explore more</a>
+        </Link>
       </section>
     </div>
   )
