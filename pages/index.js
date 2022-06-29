@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import logo from '../sources/images/us.png'
 import product from '../sources/images/product.png'
 import mobileapp from '../sources/images/mobile-app.png'
+import umershabir from '../sources/images/umer.svg'
 import fullstack from '../sources/images/full-stack.png'
 import data from '../sources/images/data.png'
 const mywork = [
@@ -56,13 +57,20 @@ export default function Home() {
         >
           <div className='logo'>
             <Link href='/'>
-              <a>Umer Shabir</a>
+              <a>
+                <Image src={umershabir} width={200} />
+              </a>
             </Link>
           </div>
-          <ul style={{ listStyle: 'none' }}>
+          <ul style={{ listStyle: 'none', display: 'flex', columnGap: '15px' }}>
             <li>
               <Link href='/blog'>
                 <a>Blogs</a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/work'>
+                <a>Work</a>
               </Link>
             </li>
           </ul>
