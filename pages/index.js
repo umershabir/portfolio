@@ -7,6 +7,10 @@ import product from '../sources/images/product.png'
 import mobileapp from '../sources/images/mobile-app.png'
 import umershabir from '../sources/images/umer.svg'
 import fullstack from '../sources/images/full-stack.png'
+import frontend from '../sources/images/frontend.png'
+
+import cloud from '../sources/images/cloud-storage.png'
+
 import data from '../sources/images/data.png'
 const mywork = [
   {
@@ -39,7 +43,7 @@ export default function Home() {
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
           integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
-          crossorigin='anonymous'
+          crossOrigin='anonymous'
           referrerpolicy='no-referrer'
         />
       </Head>
@@ -115,6 +119,22 @@ export default function Home() {
           ></img>
         </a>
       </main>
+      <section className={styles.counter}>
+        <div className={styles.counterinner}>
+          <div className={styles.counterlist}>
+            <h2>1</h2>
+            <p>PROJECTS COMPLETED</p>
+          </div>
+          <div className={styles.counterlist}>
+            <h2>2+</h2>
+            <p>YEARS EXPERIENCE</p>
+          </div>
+          <div className={styles.counterlist}>
+            <h2>1</h2>
+            <p>HAPPY CLIENTS</p>
+          </div>
+        </div>
+      </section>
       <section className={styles.offeringsection}>
         <h2 style={{ fontWeight: 500, marginBottom: 0 }}>WHAT I OFFER</h2>
         <p style={{ fontWeight: 500, marginTop: 10 }}>
@@ -123,20 +143,9 @@ export default function Home() {
         <div className={styles.myoffers}>
           <div className={styles.offering}>
             <div className='icon'>
-              <Image src={fullstack} width={50} height={50} />{' '}
+              <Image src={data} width={50} height={50} />{' '}
             </div>
-            <h3>MERN stack development</h3>
-            <p style={{ textAlign: 'center', marginTop: 0 }}>
-              Coding along with your team on a large scale application to make
-              your customers happy with new features and performance
-              improvements.
-            </p>
-          </div>
-          <div className={styles.offering}>
-            <div className='icon'>
-              <Image src={mobileapp} width={50} height={50} />{' '}
-            </div>
-            <h3>Mobile & Desktop app</h3>
+            <h3>Writing Code</h3>
             <p style={{ textAlign: 'center', marginTop: 0 }}>
               Coding along with your team on a large scale application to make
               your customers happy with new features and performance
@@ -153,11 +162,48 @@ export default function Home() {
               product (MVP) and beyond within a well-architected application.
             </p>
           </div>
+
           <div className={styles.offering}>
             <div className='icon'>
-              <Image src={data} width={50} height={50} />{' '}
+              <Image src={cloud} width={50} height={50} />{' '}
             </div>
-            <h3>Writing Code</h3>
+            <h3>SaaS Development</h3>
+            <p style={{ textAlign: 'center', marginTop: 0 }}>
+              Coding along with your team on a large scale application to make
+              your customers happy with new features and performance
+              improvements.
+            </p>
+          </div>
+          <div className={styles.offering}>
+            <div className='icon'>
+              <Image src={fullstack} width={50} height={50} />{' '}
+            </div>
+            <h3>Full stack development</h3>
+            <p style={{ textAlign: 'center', marginTop: 0 }}>
+              Coding along with your team on a large scale application to make
+              your customers happy with new features and performance
+              improvements.
+            </p>
+          </div>
+          <div className={styles.offering}>
+            <div className='icon'>
+              <Image src={frontend} width={50} height={50} />{' '}
+            </div>
+            <h3>Frontend development</h3>
+            <p style={{ textAlign: 'center', marginTop: 0 }}>
+              Coding along with your team on a large scale application to make
+              your customers happy with new features and performance
+              improvements.
+            </p>
+          </div>
+
+          <div className={styles.offering}>
+            <div className='icon'>
+              <Image src={mobileapp} width={50} height={50} />{' '}
+            </div>
+            <h3>
+              Mobile app<small>(react native)</small>
+            </h3>
             <p style={{ textAlign: 'center', marginTop: 0 }}>
               Coding along with your team on a large scale application to make
               your customers happy with new features and performance
@@ -189,11 +235,11 @@ export default function Home() {
         </p>
         <div className={styles.experience}>
           {mywork.map((item, index) => (
-            <a href={item.link} style={{ width: '33.333%', margin: '1rem' }}>
+            <a href={item.link} style={{ margin: '1rem' }} key={index}>
               <div style={{ position: 'relative' }}>
                 <img
                   src={item.image}
-                  alt=''
+                  alt='project image'
                   style={{ width: '100%', height: 'auto', borderRadius: 8 }}
                 />
                 <span
@@ -210,7 +256,7 @@ export default function Home() {
             </a>
           ))}
         </div>
-        <Link href='/'>
+        <Link href='/work'>
           <a className={styles.exploremore}>Explore more</a>
         </Link>
       </section>
