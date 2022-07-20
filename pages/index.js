@@ -1,37 +1,13 @@
+// dependencies
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import logo from '../sources/images/us.png'
-import product from '../sources/images/product.png'
-import mobileapp from '../sources/images/mobile-app.png'
-import umershabir from '../sources/images/umer.svg'
-import fullstack from '../sources/images/full-stack.png'
-import frontend from '../sources/images/frontend.png'
+import Navbar from '../components/Navbar'
+import HeroSection from '../components/HeroSection'
+import Services from '../components/Services'
+import ProjectStats from '../components/ProjectStats'
+import WorkingHistory from '../components/WorkingHistory'
+import ProfessionalStory from '../components/ProfessionalStory'
 
-import cloud from '../sources/images/cloud-storage.png'
-
-import data from '../sources/images/data.png'
-const mywork = [
-  {
-    image:
-      'https://assets.website-files.com/610baf44e0fca185ca8a93b0/610cdbabc8e4085df091aa78_Work%20Example%201.jpg',
-    heading: 'print for sit amet',
-    link: '',
-  },
-  {
-    image:
-      'https://assets.website-files.com/610baf44e0fca185ca8a93b0/610cdbabc8e4085df091aa78_Work%20Example%201.jpg',
-    heading: 'print for sit amet',
-    link: '',
-  },
-  {
-    image:
-      'https://assets.website-files.com/610baf44e0fca185ca8a93b0/610cdbabc8e4085df091aa78_Work%20Example%201.jpg',
-    heading: 'print for sit amet',
-    link: '',
-  },
-]
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -48,218 +24,13 @@ export default function Home() {
         />
       </Head>
       <main className={styles.main}>
-        <nav
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            padding: '0 10px',
-            width: '100%',
-            borderBottom: '1px solid #ccc',
-            boxShadow: '',
-          }}
-        >
-          <div className='logo'>
-            <Link href='/'>
-              <a>
-                <Image src={umershabir} width={200} />
-              </a>
-            </Link>
-          </div>
-          <ul style={{ listStyle: 'none', display: 'flex', columnGap: '15px' }}>
-            <li>
-              <Link href='/blog'>
-                <a>Blogs</a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/work'>
-                <a>Work</a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-
-        <div className={styles.info}>
-          <div className='avatar'>
-            <Image src={logo} width={128} height={128} />
-          </div>
-          <h1 style={{ fontWeight: 500 }}>I'm Umer Shabir.</h1>
-          <p style={{ fontSize: '1.1rem' }}>
-            Pakistan based software engineer for MERN stack and
-            <br /> React Native(cross plateform for ios and android mobile
-            apps). <br />
-            <span className={styles.shake}>
-              I work for ideas to bring in to life.
-            </span>
-          </p>
-          <div className={styles.contact}>
-            <a
-              href='https://www.linkedin.com/in/umer-shabir-4a8545100/'
-              target='blank'
-            >
-              <i className='fab fa-linkedin'></i>
-            </a>
-            <a href='https://github.com/umershabir' target='blank'>
-              <i className='fab fa-github'></i>
-            </a>
-            <a href='mailto:muhammadumershabir@gmail.com'>
-              <i className='fa-solid fa-envelope'></i>
-            </a>
-            <a href=''>
-              <i className='fa-brands fa-skype'></i>
-            </a>
-          </div>
-        </div>
-        <a href='#start' className={(styles.scrolldown, styles.scrollanchor)}>
-          <img
-            src='https://assets.website-files.com/610baf44e0fca185ca8a93b0/610ce49a895b7afa262436b0_Arrow%20Icon.svg'
-            alt=''
-            className={styles.scrolldownimage}
-          ></img>
-        </a>
+        <Navbar />
+        <HeroSection />
       </main>
-      <section className={styles.counter}>
-        <div className={styles.counterinner}>
-          <div className={styles.counterlist}>
-            <h2>1</h2>
-            <p>PROJECTS COMPLETED</p>
-          </div>
-          <div className={styles.counterlist}>
-            <h2>2+</h2>
-            <p>YEARS EXPERIENCE</p>
-          </div>
-          <div className={styles.counterlist}>
-            <h2>1</h2>
-            <p>HAPPY CLIENTS</p>
-          </div>
-        </div>
-      </section>
-      <section className={styles.offeringsection}>
-        <h2 style={{ fontWeight: 500, marginBottom: 0 }}>WHAT I OFFER</h2>
-        <p style={{ fontWeight: 500, marginTop: 10 }}>
-          WHY YOU MIGHT WANT TO HIRE ME.
-        </p>
-        <div className={styles.myoffers}>
-          <div className={styles.offering}>
-            <div className='icon'>
-              <Image src={data} width={50} height={50} />{' '}
-            </div>
-            <h3>Writing Code</h3>
-            <p style={{ textAlign: 'center', marginTop: 0 }}>
-              Coding along with your team on a large scale application to make
-              your customers happy with new features and performance
-              improvements.
-            </p>
-          </div>
-          <div className={styles.offering}>
-            <div className='icon'>
-              <Image src={product} width={50} height={50} />
-            </div>
-            <h3>MVP</h3>
-            <p style={{ textAlign: 'center', marginTop: 0 }}>
-              Bringing your idea to code from zero to one as a minimal viable
-              product (MVP) and beyond within a well-architected application.
-            </p>
-          </div>
-
-          <div className={styles.offering}>
-            <div className='icon'>
-              <Image src={cloud} width={50} height={50} />{' '}
-            </div>
-            <h3>SaaS Development</h3>
-            <p style={{ textAlign: 'center', marginTop: 0 }}>
-              Coding along with your team on a large scale application to make
-              your customers happy with new features and performance
-              improvements.
-            </p>
-          </div>
-          <div className={styles.offering}>
-            <div className='icon'>
-              <Image src={fullstack} width={50} height={50} />{' '}
-            </div>
-            <h3>Full stack development</h3>
-            <p style={{ textAlign: 'center', marginTop: 0 }}>
-              Coding along with your team on a large scale application to make
-              your customers happy with new features and performance
-              improvements.
-            </p>
-          </div>
-          <div className={styles.offering}>
-            <div className='icon'>
-              <Image src={frontend} width={50} height={50} />{' '}
-            </div>
-            <h3>Frontend development</h3>
-            <p style={{ textAlign: 'center', marginTop: 0 }}>
-              Coding along with your team on a large scale application to make
-              your customers happy with new features and performance
-              improvements.
-            </p>
-          </div>
-
-          <div className={styles.offering}>
-            <div className='icon'>
-              <Image src={mobileapp} width={50} height={50} />{' '}
-            </div>
-            <h3>
-              Mobile app<small>(react native)</small>
-            </h3>
-            <p style={{ textAlign: 'center', marginTop: 0 }}>
-              Coding along with your team on a large scale application to make
-              your customers happy with new features and performance
-              improvements.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className={styles.counter}>
-        <div className={styles.counterinner}>
-          <div className={styles.counterlist}>
-            <h2>1</h2>
-            <p>PROJECTS COMPLETED</p>
-          </div>
-          <div className={styles.counterlist}>
-            <h2>2+</h2>
-            <p>YEARS EXPERIENCE</p>
-          </div>
-          <div className={styles.counterlist}>
-            <h2>1</h2>
-            <p>HAPPY CLIENTS</p>
-          </div>
-        </div>
-      </section>
-      <section className={styles.work}>
-        <h2 style={{ fontWeight: 500, marginBottom: 0 }}>Work examples</h2>
-        <p style={{ fontWeight: 500, marginTop: 10 }}>
-          Some example of work I've done for clients previously.
-        </p>
-        <div className={styles.experience}>
-          {mywork.map((item, index) => (
-            <a href={item.link} style={{ margin: '1rem' }} key={index}>
-              <div style={{ position: 'relative' }}>
-                <img
-                  src={item.image}
-                  alt='project image'
-                  style={{ width: '100%', height: 'auto', borderRadius: 8 }}
-                />
-                <span
-                  style={{
-                    position: 'absolute',
-                    left: 0,
-                    bottom: 0,
-                    color: '#E4E5E5',
-                  }}
-                >
-                  {item.heading}
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
-        <Link href='/work'>
-          <a className={styles.exploremore}>Explore more</a>
-        </Link>
-      </section>
+      <Services />
+      <ProjectStats />
+      <WorkingHistory />
+      <ProfessionalStory />
     </div>
   )
 }

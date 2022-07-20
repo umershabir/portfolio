@@ -79,6 +79,7 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  padding: 2rem 0;
 }
 .myoffers {
   display: flex;
@@ -89,7 +90,7 @@
   margin: 0 auto;
 }
 .offering {
-  width: 25%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,6 +99,13 @@
 }
 .offering h3 {
   font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+.offering p {
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
 }
 .counter {
   background-color: #3a4443;
@@ -107,6 +115,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.professionalstory {
+  width: 100%;
+  background: #fff;
+  padding: 2rem 0;
+}
+.professionalinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -127,12 +148,15 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 2rem 0;
 }
 .experience {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
 }
 .exploremore {
   border: 2px solid #3a4443;
