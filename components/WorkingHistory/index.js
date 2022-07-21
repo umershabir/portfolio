@@ -2,6 +2,7 @@
 import styles from '../../styles/Home.module.css'
 import { mywork } from './data'
 import Link from 'next/link'
+import Image from 'next/image'
 //Working History component
 export default function WorkingHistory() {
   return (
@@ -9,7 +10,7 @@ export default function WorkingHistory() {
       <section className={styles.work}>
         <h2 style={{ fontWeight: 500, margin: 0 }}>Work examples</h2>
         <p style={{ fontWeight: 500, margin: '10px 0 0 0' }}>
-          Some example of work I've done for clients previously.
+          {`Some example of work I've done for clients previously.`}
         </p>
         <div className={styles.experience}>
           {mywork.map((item, index) => (
@@ -22,10 +23,12 @@ export default function WorkingHistory() {
               key={index}
             >
               <div style={{ position: 'relative' }}>
-                <img
+                <Image
+                  loader={() => item.image}
                   src={item.image}
                   alt='project image'
-                  style={{ width: '100%', height: 'auto' }}
+                  width={300}
+                  height={200}
                 />
                 <span
                   style={{

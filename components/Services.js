@@ -20,7 +20,7 @@ export default function Services() {
         <div className={styles.myoffers}>
           <div className={styles.offering}>
             <div className='icon'>
-              <Image src={data} width={50} height={50} />{' '}
+              <Image src={data} width={50} height={50} alt='illustration' />{' '}
             </div>
             <h3>Writing Code</h3>
             <p style={{ textAlign: 'center', marginTop: 0 }}>
@@ -31,7 +31,7 @@ export default function Services() {
           </div>
           <div className={styles.offering}>
             <div className='icon'>
-              <Image src={product} width={50} height={50} />
+              <Image src={product} width={50} height={50} alt='illustration' />
             </div>
             <h3>MVP</h3>
             <p style={{ textAlign: 'center', marginTop: 0 }}>
@@ -42,7 +42,7 @@ export default function Services() {
 
           <div className={styles.offering}>
             <div className='icon'>
-              <Image src={cloud} width={50} height={50} />{' '}
+              <Image src={cloud} width={50} height={50} alt='illustration' />{' '}
             </div>
             <h3>SaaS development</h3>
             <p style={{ textAlign: 'center', marginTop: 0 }}>
@@ -53,7 +53,12 @@ export default function Services() {
           </div>
           <div className={styles.offering}>
             <div className='icon'>
-              <Image src={fullstack} width={50} height={50} />{' '}
+              <Image
+                src={fullstack}
+                width={50}
+                height={50}
+                alt='illustration'
+              />{' '}
             </div>
             <h3>Full stack</h3>
             <p style={{ textAlign: 'center', marginTop: 0 }}>
@@ -76,7 +81,12 @@ export default function Services() {
 
           <div className={styles.offering}>
             <div className='icon'>
-              <Image src={mobileapp} width={50} height={50} />{' '}
+              <Image
+                src={mobileapp}
+                width={50}
+                height={50}
+                alt='illustration'
+              />{' '}
             </div>
             <h3>
               Mobile app<small>(react native)</small>

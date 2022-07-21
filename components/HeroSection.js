@@ -5,6 +5,8 @@ import logo from '../sources/images/us.png'
 
 // herosection
 export default function HeroSection() {
+  const navigationLink =
+    'https://assets.website-files.com/610baf44e0fca185ca8a93b0/610ce49a895b7afa262436b0_Arrow%20Icon.svg'
   return (
     <>
       <div className={styles.info}>
@@ -39,11 +41,14 @@ export default function HeroSection() {
         </div>
       </div>
       <a href='#start' className={(styles.scrolldown, styles.scrollanchor)}>
-        <img
-          src='https://assets.website-files.com/610baf44e0fca185ca8a93b0/610ce49a895b7afa262436b0_Arrow%20Icon.svg'
-          alt=''
+        <Image
+          loader={() => navigationLink}
+          src={navigationLink}
+          width={30}
+          height={20}
+          alt='navigation-link'
           className={styles.scrolldownimage}
-        ></img>
+        />
       </a>
     </>
   )

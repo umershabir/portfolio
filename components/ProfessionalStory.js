@@ -9,7 +9,13 @@ export default function ProfessionalStory() {
         <div className={styles.professionalinner}>
           <div className='history'>
             <span className='history-image'>
-              <img src={terfort.src} alt='' className='h-dt-img' />
+              <Image
+                src={terfort.src}
+                width={200}
+                height={200}
+                alt='company-image'
+                className='h-dt-img'
+              />
             </span>
             <div className='history-detail'>
               <p>2009 - 2014</p>
