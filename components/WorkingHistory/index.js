@@ -1,52 +1,38 @@
 // dependencies
-import styles from '../../styles/Home.module.css'
-import { mywork } from './data'
+import React from 'react'
+import { mostRecentWork } from './data'
 import Link from 'next/link'
+import { useSelector } from 'react-redux'
 import Image from 'next/image'
 //Working History component
 export default function WorkingHistory() {
+  const theme = useSelector((state) => state.themeChangingReducer.value)
+  const [open, setOpen] = React.useState(false)
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
   return (
     <>
-      <section className={styles.work}>
-        <h2 style={{ fontWeight: 500, margin: 0 }}>Work examples</h2>
-        <p style={{ fontWeight: 500, margin: '10px 0 0 0' }}>
-          {`Some example of work I've done for clients previously.`}
-        </p>
-        <div className={styles.experience}>
-          {mywork.map((item, index) => (
-            <a
-              href={item.link}
-              style={{
-                padding: '1rem',
-                width: '33%',
-              }}
-              key={index}
-            >
-              <div style={{ position: 'relative' }}>
-                <Image
-                  loader={() => item.image}
-                  src={item.image}
-                  alt='project image'
-                  width={300}
-                  height={200}
-                />
-                <span
-                  style={{
-                    position: 'absolute',
-                    left: 0,
-                    bottom: 0,
-                    color: '#E4E5E5',
-                  }}
-                >
-                  {item.heading}
-                </span>
+      <section
+        className='w-full'
+        style={{ background: theme.bg, color: theme.clr }}
+      >
+        <div className='container mx-auto px-3'>
+          <div className='flex flex-col'>
+            <h2 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>
+              Recent Projects
+            </h2>
+            {mostRecentWork.map((item, index) => (
+              <div key={index}>
+                <div>{item.heading}</div>
               </div>
+            ))}
+          </div>
+          <Link href='/work'>
+            <a className='hover:underline'>
+              Explore more <i className='fa-solid fa-arrow-right-long'></i>
             </a>
-          ))}
+          </Link>
         </div>
-        <Link href='/work'>
-          <a className={styles.exploremore}>Explore more</a>
-        </Link>
       </section>
     </>
   )
