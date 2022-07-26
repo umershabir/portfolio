@@ -11,7 +11,7 @@ export default function HeroSection() {
   return (
     <>
       <div
-        className='w-full '
+        className='w-full md:h-screen'
         style={{ background: theme.bg, color: theme.clr }}
       >
         <div className='container mx-auto flex flex-col px-4 pt-4 justify-evenly items-center md:items-start'>
