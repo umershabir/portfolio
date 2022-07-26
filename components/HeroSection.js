@@ -11,10 +11,10 @@ export default function HeroSection() {
   return (
     <>
       <div
-        className='w-full md:h-screen'
+        className='w-full'
         style={{ background: theme.bg, color: theme.clr }}
       >
-        <div className='container mx-auto flex flex-col px-4 pt-4 justify-evenly items-center md:items-start'>
+        <div className='container mx-auto flex flex-col px-4 pt-4 justify-evenly xl:h-screen'>
           <div className='intro-sect flex flex-col items-center md:items-start my-5'>
             <div className='avatar'>
               <Image src={logo} width={128} height={128} alt='hero-image' />
@@ -29,7 +29,7 @@ export default function HeroSection() {
               <span> I work for ideas to bring them in to life.</span>
             </p>
             <div className='flex gap-x-2 text-2xl'>
-              <a
+              {/* <a
                 href='https://www.linkedin.com/in/umer-shabir-4a8545100/'
                 target='blank'
               >
@@ -43,7 +43,14 @@ export default function HeroSection() {
               </a>
               <a href=''>
                 <i className='fa-brands fa-skype'></i>
-              </a>
+              </a> */}
+              <i className='fa-brands fa-html5'></i>
+              <i className='fa-brands fa-css3'></i>
+              <i className='fa-brands fa-js-square'></i>
+              <i className='fa-brands fa-node-js'></i>
+              <i className='fa-brands fa-react'></i>
+              <i className='fa-solid fa-database'></i>
+              <i className='fa-solid fa-server'></i>
             </div>
           </div>
           <div className='about-sect flex flex-col items-center md:items-start my-5'>
