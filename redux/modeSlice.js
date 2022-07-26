@@ -3,7 +3,11 @@ import { createSlice } from '@reduxjs/toolkit'
 export const themeChangingSlice = createSlice({
   name: 'themeChanging',
   initialState: {
-    value: '#fff',
+    value: {
+      bg: '#fff',
+      clr: '#3a4443',
+      themeOff: '#ffc83d',
+    },
   },
   reducers: {
     true: (state) => {
