@@ -11,11 +11,11 @@ export default function HeroSection() {
   return (
     <>
       <div
-        className='w-full'
+        className='w-full '
         style={{ background: theme.bg, color: theme.clr }}
       >
-        <div className='container mx-auto flex flex-col px-4 h-screen justify-evenly items-center md:items-start'>
-          <div className='intro-sect flex flex-col items-center md:items-start'>
+        <div className='container mx-auto flex flex-col px-4 pt-4 justify-evenly items-center md:items-start'>
+          <div className='intro-sect flex flex-col items-center md:items-start my-5'>
             <div className='avatar'>
               <Image src={logo} width={128} height={128} alt='hero-image' />
             </div>
@@ -46,7 +46,7 @@ export default function HeroSection() {
               </a>
             </div>
           </div>
-          <div className='about-sect flex flex-col items-center md:items-start'>
+          <div className='about-sect flex flex-col items-center md:items-start my-5'>
             <h2 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>About</h2>
             <p className='text-base lg:text-xl md:my-2 md:w-1/2 font-light'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
