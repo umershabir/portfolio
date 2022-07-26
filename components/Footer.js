@@ -1,7 +1,12 @@
+import { useSelector } from 'react-redux'
 export default function Footer() {
+  const theme = useSelector((state) => state.themeChangingReducer.value)
   return (
     <>
-      <footer className='w-full md:p-5 p-2'>
+      <footer
+        className='w-full md:p-5 p-2'
+        style={{ background: theme.bg, color: theme.clr }}
+      >
         <div className='container mx-auto'>
           <div className='flex flex-col justify-center items-center'>
             <div className='flex gap-x-2 text-2xl'>

@@ -8,6 +8,7 @@ import ProjectStats from '../components/ProjectStats'
 import WorkingHistory from '../components/WorkingHistory'
 import ProfessionalStory from '../components/ProfessionalStory'
 import Footer from '../components/Footer'
+import BlogSection from '../components/BlogSection'
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
           <HeroSection />
           <Services />
           <WorkingHistory />
-          {/* <ProfessionalStory /> */}
+          <BlogSection />
         </main>
         <Footer />
       </div>

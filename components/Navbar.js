@@ -15,7 +15,7 @@ export default function Navbar() {
   }
   return (
     <nav
-      className='w-full p-3 md:p-5 '
+      className='w-full p-3 md:p-5 fixed z-10'
       style={{
         background: theme.bg,
         borderBottom: '1px solid #ddd',
@@ -47,7 +47,7 @@ export default function Navbar() {
               <a>Work</a>
             </Link>
           </li>
-          <li className='flex justify-center items-center'>
+          <li className='flex justify-center items-center gap-x-1'>
             <i
               className='fa-solid fa-sun text-xl'
               style={{ color: theme.themeOff }}

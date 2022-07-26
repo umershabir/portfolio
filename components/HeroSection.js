@@ -11,7 +11,7 @@ export default function HeroSection() {
   return (
     <>
       <div
-        className='w-full'
+        className='w-full pt-6 md:pt-9'
         style={{ background: theme.bg, color: theme.clr }}
       >
         <div className='container mx-auto flex flex-col px-4 pt-4 justify-evenly xl:h-screen'>
@@ -22,7 +22,7 @@ export default function HeroSection() {
             <h1 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>
               Hello, {`I'm`} Umer Shabir 👋{' '}
             </h1>
-            <p className=' text-base lg:text-2xl md:my-2 md:w-1/2'>
+            <p className=' text-base md:my-2 md:w-1/2'>
               Pakistan based software engineer for MERN stack and React Native
               (cross plateform for ios and android mobile apps).
               <br />
@@ -55,7 +55,7 @@ export default function HeroSection() {
           </div>
           <div className='about-sect flex flex-col items-center md:items-start my-5'>
             <h2 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>About</h2>
-            <p className='text-base lg:text-xl md:my-2 md:w-1/2 font-light'>
+            <p className='text-base md:my-2 md:w-1/2 font-light'>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
               rerum. Veritatis optio aperiam voluptas minus delectus perferendis
               sapiente, dignissimos eum odio. Esse saepe praesentium eligendi

@@ -29,7 +29,7 @@ export default function Services() {
                   <Image src={data} width={30} height={30} alt='illustration' />
                 </span>
               </h3>
-              <p className='text-base lg:text-xl md:my-2 md:w-1/2 font-light'>
+              <p className='text-base md:my-2 md:w-1/2 font-light'>
                 Coding along with your team on a large scale application to make
                 your customers happy with new features and performance
                 improvements.
@@ -47,7 +47,7 @@ export default function Services() {
                   />
                 </span>
               </h3>
-              <p className='text-base lg:text-xl md:my-2 md:w-1/2 font-light'>
+              <p className='text-base  md:my-2 md:w-1/2 font-light'>
                 Bringing your idea to code from zero to one as a minimal viable
                 product (MVP) and beyond within a well-architected application.
               </p>
@@ -64,7 +64,7 @@ export default function Services() {
                   />
                 </span>
               </h3>
-              <p className='text-base lg:text-xl md:my-2 md:w-1/2 font-light'>
+              <p className='text-base md:my-2 md:w-1/2 font-light'>
                 Coding along with your team on a large scale application to make
                 your customers happy with new features and performance
                 improvements.
@@ -82,7 +82,7 @@ export default function Services() {
                   />
                 </span>
               </h3>
-              <p className='text-base lg:text-xl md:my-2 md:w-1/2 font-light'>
+              <p className='text-base md:my-2 md:w-1/2 font-light'>
                 Coding along with your team on a large scale application to make
                 your customers happy with new features and performance
                 improvements.
@@ -100,7 +100,7 @@ export default function Services() {
                   />
                 </span>
               </h3>
-              <p className='text-base lg:text-xl md:my-2 md:w-1/2 font-light'>
+              <p className='text-base md:my-2 md:w-1/2 font-light'>
                 Coding along with your team on a large scale application to make
                 your customers happy with new features and performance
                 improvements.

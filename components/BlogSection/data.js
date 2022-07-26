@@ -1,4 +1,4 @@
-import eshaafiAdminPanel from './images/eshaafi.adminpanel.jpg'
+import eshaafiAdminPanel from './images/blogpost.jpg'
 
 export const mywork = [
   {
