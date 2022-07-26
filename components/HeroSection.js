@@ -14,7 +14,7 @@ export default function HeroSection() {
         className='w-full'
         style={{ background: theme.bg, color: theme.clr }}
       >
-        <div className='container mx-auto flex flex-col px-4 justify-evenly items-center md:items-start h-screen'>
+        <div className='container mx-auto flex flex-col px-4 h-screen justify-evenly items-center md:items-start'>
           <div className='intro-sect flex flex-col items-center md:items-start'>
             <div className='avatar'>
               <Image src={logo} width={128} height={128} alt='hero-image' />

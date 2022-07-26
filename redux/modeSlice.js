@@ -10,12 +10,14 @@ export const themeChangingSlice = createSlice({
       state.value = {
         bg: '#1F2937',
         clr: '#fff',
+        fontClr: '#ffc83d',
       }
     },
     false: (state) => {
       state.value = {
         bg: '#fff',
         clr: '#3a4443',
+        themeOff: '#ffc83d',
       }
     },
   },
