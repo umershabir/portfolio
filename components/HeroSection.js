@@ -14,7 +14,7 @@ export default function HeroSection() {
         className='w-full pt-6 md:pt-9'
         style={{ background: theme.bg, color: theme.clr }}
       >
-        <div className='container mx-auto flex flex-col px-4 pt-4 justify-evenly xl:h-screen'>
+        <div className='container mx-auto flex flex-col px-4 md:px-0 pt-4 justify-evenly xl:h-screen'>
           <div className='intro-sect flex flex-col items-center md:items-start my-5'>
             <div className='avatar'>
               <Image src={logo} width={128} height={128} alt='hero-image' />
@@ -22,7 +22,7 @@ export default function HeroSection() {
             <h1 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>
               Hello, {`I'm`} Umer Shabir 👋{' '}
             </h1>
-            <p className=' text-base md:my-2 md:w-1/2'>
+            <p className=' text-base md:text-xl md:my-2 md:w-1/2'>
               Pakistan based software engineer for MERN stack and React Native
               (cross plateform for ios and android mobile apps).
               <br />

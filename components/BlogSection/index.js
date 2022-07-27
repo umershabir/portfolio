@@ -14,7 +14,7 @@ export default function BlogSection() {
         className='w-full py-5'
         style={{ background: theme.bg, color: theme.clr }}
       >
-        <div className='container mx-auto px-3'>
+        <div className='container mx-auto px-4 md:px-0'>
           <div className='flex flex-col'>
             <h2 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>
               Latest Blogs
@@ -26,10 +26,12 @@ export default function BlogSection() {
                     <h3 className='text-base lg:text-2xl md:my-2 md:w-1/2 flex items-center font-medium'>
                       {item.heading}
                     </h3>
-                    <p className='text-base md:my-2  font-light'>
+                    <p className='text-base md:my-2  font-light '>
                       {item.description}
                     </p>
-                    <p className='underline'>Read more</p>
+                    <Link href='/blog'>
+                      <a className='underline'>Read more </a>
+                    </Link>
                   </a>
                 </Link>
                 <div className='md:w-1/2'>

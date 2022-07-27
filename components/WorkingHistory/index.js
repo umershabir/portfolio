@@ -16,7 +16,7 @@ export default function WorkingHistory() {
         className='w-full'
         style={{ background: theme.bg, color: theme.clr }}
       >
-        <div className='container mx-auto px-3'>
+        <div className='container mx-auto px-4 md:px-0'>
           <div className='flex flex-col'>
             <h2 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>
               Recent Projects
