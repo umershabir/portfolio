@@ -44,7 +44,7 @@ export default function BlogSection() {
               </div>
             ))}
           </div>
-          <Link href='/work'>
+          <Link href='/blog'>
             <a className='hover:underline'>
               Explore more <i className='fa-solid fa-arrow-right-long'></i>
             </a>

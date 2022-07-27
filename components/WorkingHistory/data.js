@@ -8,7 +8,7 @@ export const mywork = [
               rerum. Veritatis optio aperiam voluptas minus delectus perferendis
               sapiente, dignissimos eum odio. Esse saepe praesentium eligendi
               aspernatur.`,
-    heading: 'test',
+    heading: 'test project',
   },
   {
     image: eshaafiAdminPanel,
@@ -17,7 +17,7 @@ export const mywork = [
               rerum. Veritatis optio aperiam voluptas minus delectus perferendis
               sapiente, dignissimos eum odio. Esse saepe praesentium eligendi
               aspernatur.`,
-    heading: 'test',
+    heading: 'test project',
   },
 ]
 

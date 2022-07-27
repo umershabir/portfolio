@@ -4,11 +4,10 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import Services from '../components/Services'
-import ProjectStats from '../components/ProjectStats'
 import WorkingHistory from '../components/WorkingHistory'
-import ProfessionalStory from '../components/ProfessionalStory'
 import Footer from '../components/Footer'
 import BlogSection from '../components/BlogSection'
+import JobHistory from '../components/JobHistory'
 
 export default function Home() {
   return (
@@ -29,6 +28,7 @@ export default function Home() {
         <Navbar />
         <main>
           <HeroSection />
+          <JobHistory />
           <Services />
           <WorkingHistory />
           <BlogSection />

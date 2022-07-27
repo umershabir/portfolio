@@ -29,7 +29,6 @@ export default function Footer() {
             <a href='mail:muhammadumershabir@gmail.com'>
               muhammadumershabir@gmail.com
             </a>
-            <p>00923093961696</p>
           </div>
         </div>
       </footer>
