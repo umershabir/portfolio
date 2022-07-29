@@ -27,7 +27,7 @@ export default function HeroSection() {
               <br />
               <span
                 className=' text-base md:text-xl md:my-2 md:w-1/2'
-                style={{ color: 'ffc83d' }}
+                style={{ color: '#ffc83d' }}
               >
                 {`"I work to bring life into Ideas."`}
               </span>
