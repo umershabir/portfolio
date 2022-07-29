@@ -43,7 +43,7 @@ export default function BlogPage() {
                   {item.heading}
                 </h3>
                 <p className='text-gray-500'>
-                  {item.date}-{item.tags}
+                  {item.date} - {item.tags}
                 </p>
                 <p className='text-base md:my-2  font-light md:w-1/2'>
                   {item.description}

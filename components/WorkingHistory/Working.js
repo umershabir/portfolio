@@ -16,7 +16,7 @@ export default function Working() {
               Projects 📚
             </h1>
             <p className=' text-base md:my-2 md:w-1/2 md:text-xl'>
-              {`A selection of projects I've worked on, during my career as a software developer.`}
+              {`A selection of projects I've worked on,`}
             </p>
             <div className='flex gap-x-2 text-2xl'>
               <a

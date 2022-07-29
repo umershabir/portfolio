@@ -22,7 +22,7 @@ export default function Footer() {
               <a href='mailto:muhammadumershabir@gmail.com'>
                 <i className='fa-solid fa-envelope'></i>
               </a>
-              <a href=''>
+              <a href='skype:muhammadumershabir?chat'>
                 <i className='fa-brands fa-skype'></i>
               </a>
             </div>

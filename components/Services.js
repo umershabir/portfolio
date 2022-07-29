@@ -52,7 +52,7 @@ export default function Services() {
                 product (MVP) and beyond within a well-architected application.
               </p>
             </div>
-            <div className='offering md:my-3 my-2'>
+            {/* <div className='offering md:my-3 my-2'>
               <h3 className='text-base lg:text-2xl md:my-2 md:w-1/2 flex  items-center font-medium'>
                 SaaS development{' '}
                 <span className='mx-3'>
@@ -69,7 +69,7 @@ export default function Services() {
                 your customers happy with new features and performance
                 improvements.
               </p>
-            </div>
+            </div> */}
             <div className='offering md:my-3 my-2'>
               <h3 className=' text-base lg:text-2xl md:my-2 md:w-1/2 flex  items-center font-medium'>
                 Full stack{' '}
@@ -83,9 +83,10 @@ export default function Services() {
                 </span>
               </h3>
               <p className='text-base md:my-2 md:w-1/2 font-light'>
-                Coding along with your team on a large scale application to make
-                your customers happy with new features and performance
-                improvements.
+                You might want to save your time to not having different
+                discussions with the frontend developer and the backend
+                developer instead just one person could handle your whole
+                project.
               </p>
             </div>
             <div className='offering md:my-3 my-2'>
@@ -101,9 +102,9 @@ export default function Services() {
                 </span>
               </h3>
               <p className='text-base md:my-2 md:w-1/2 font-light'>
-                Coding along with your team on a large scale application to make
-                your customers happy with new features and performance
-                improvements.
+                {`Your idea deserve millions of users, I
+                can add my values and skills to develop a cross-mobile app using
+                react native.`}
               </p>
             </div>
           </div>

@@ -15,7 +15,7 @@ export default function HeroSection() {
         style={{ background: theme.bg, color: theme.clr }}
       >
         <div className='container mx-auto flex flex-col px-4 md:px-0 pt-4 justify-evenly xl:h-screen'>
-          <div className='intro-sect flex flex-col items-center md:items-start my-5'>
+          <div className='intro-sect flex flex-col items-center md:items-start my-5 gap-y-5'>
             <div className='avatar'>
               <Image src={logo} width={128} height={128} alt='hero-image' />
             </div>
@@ -23,12 +23,16 @@ export default function HeroSection() {
               Hello, {`I'm`} Umer Shabir 👋{' '}
             </h1>
             <p className=' text-base md:text-xl md:my-2 md:w-1/2'>
-              Pakistan based software engineer for MERN stack and React Native
-              (cross plateform for ios and android mobile apps).
+              I am Pakistan based JavaScript full stack developer at Terafort,
               <br />
-              <span> I work for ideas to bring them in to life.</span>
+              <span
+                className=' text-base md:text-xl md:my-2 md:w-1/2'
+                style={{ color: 'ffc83d' }}
+              >
+                {`"I work to bring life into Ideas."`}
+              </span>
             </p>
-            <div className='flex gap-x-2 text-2xl'>
+            <div className='flex gap-x-2 text-2xl md:text-3xl'>
               {/* <a
                 href='https://www.linkedin.com/in/umer-shabir-4a8545100/'
                 target='blank'
