@@ -1,7 +1,6 @@
 import { useSelector } from 'react-redux'
 import Link from 'next/link'
-import { mywork } from './data'
-export default function BlogPage() {
+export default function BlogPosts({ posts }) {
   const theme = useSelector((state) => state.themeChangingReducer.value)
   return (
     <>
@@ -37,18 +36,18 @@ export default function BlogPage() {
             </div>
           </div>
           <div className='flex flex-col'>
-            {mywork.map((item, index) => (
+            {posts.map((item, index) => (
               <div key={index} className='flex flex-col my-4'>
                 <h3 className='text-base lg:text-2xl md:my-2 md:w-1/2 flex items-center font-medium'>
-                  {item.heading}
+                  {item.frontmatter.title}
                 </h3>
                 <p className='text-gray-500'>
-                  {item.date} - {item.tags}
+                  {item.frontmatter.date} - {item.frontmatter.tags}
                 </p>
                 <p className='text-base md:my-2  font-light md:w-1/2'>
-                  {item.description}
+                  {item.frontmatter.description}
                 </p>
-                <Link href='/blog'>
+                <Link href={`/blog/${item.slug}`}>
                   <a className='underline'>Read more</a>
                 </Link>
               </div>

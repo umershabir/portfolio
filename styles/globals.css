@@ -18,3 +18,36 @@ a {
 * {
   box-sizing: border-box;
 }
+h1 {
+  font-size: 40px;
+  line-height: 1;
+  margin: 15px 0;
+}
+h2,
+h3 {
+  font-size: 30px;
+  line-height: 1;
+  margin: 15px 0;
+}
+h5 {
+  font-size: 20px;
+  line-height: 1;
+  margin: 15px 0;
+}
+pre {
+  background-color: #3a4443;
+  border-radius: 5px;
+  padding: 8px;
+  color: aliceblue;
+  margin: 15px 0;
+  overflow-x: auto;
+}
+code {
+  width: 600px;
+}
+blockquote {
+  background-color: #3a4443;
+  padding: 15px;
+  border-radius: 5px;
+  color: aliceblue;
+}
