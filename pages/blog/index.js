@@ -8,15 +8,7 @@ export default function Blog({ posts }) {
   return (
     <div>
       <Head>
-        <title>Blogs</title>
-        <link rel='icon' href='/favicon.png' />
-        <link
-          rel='stylesheet'
-          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
-          integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
-          crossOrigin='anonymous'
-          referrerpolicy='no-referrer'
-        />
+        <title>Blogs ✍️</title>
       </Head>
       <div className='flex flex-col'>
         <BlogPosts posts={posts} />

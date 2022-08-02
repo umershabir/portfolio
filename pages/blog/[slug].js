@@ -1,35 +1,41 @@
 import fs from 'fs'
 import path from 'path'
+import Head from 'next/head'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import { useSelector } from 'react-redux'
 import CodeBlock from '../../components/CodeBlock'
 import Image from 'next/image'
 // post page
-export default function PostPage({ frontmatter, content }) {
+export default function PostPage({ frontmatter, content, slug }) {
   const theme = useSelector((state) => state.themeChangingReducer.value)
   return (
-    <div
-      className='w-full pt-6 md:pt-10 '
-      style={{ background: theme.bg, color: theme.clr }}
-    >
-      <div className='container blog-container'>
-        <div>
-          <div className='flex flex-col items-center justify-center mb-5'>
-            <Image
-              src={frontmatter.cover_image}
-              alt='blog-image'
-              width={500}
-              height={250}
-            />
-            <h1>{frontmatter.title}</h1>
-            <small>{frontmatter.date}</small>
-            <small>{frontmatter.tags}</small>
+    <>
+      <Head>
+        <title>{slug}</title>
+      </Head>
+      <div
+        className='w-full pt-6 md:pt-10 '
+        style={{ background: theme.bg, color: theme.clr }}
+      >
+        <div className='container blog-container'>
+          <div>
+            <div className='flex flex-col items-center justify-center mb-5'>
+              <Image
+                src={frontmatter.cover_image}
+                alt='blog-image'
+                width={500}
+                height={250}
+              />
+              <h1>{frontmatter.title}</h1>
+              <small>{frontmatter.date}</small>
+              <small>{frontmatter.tags}</small>
+            </div>
+            <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>
           </div>
-          <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 export async function getStaticPaths() {

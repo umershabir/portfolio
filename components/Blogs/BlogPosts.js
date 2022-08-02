@@ -37,18 +37,21 @@ export default function BlogPosts({ posts }) {
           </div>
           <div className='flex flex-col'>
             {posts.map((item, index) => (
-              <div key={index} className='flex flex-col my-4'>
-                <h3 className='text-base lg:text-2xl md:my-2 md:w-1/2 flex items-center font-medium'>
-                  {item.frontmatter.title}
-                </h3>
-                <p className='text-gray-500'>
-                  {item.frontmatter.date} - {item.frontmatter.tags}
-                </p>
-                <p className='text-base md:my-2  font-light md:w-1/2'>
-                  {item.frontmatter.description}
-                </p>
+              <div key={index}>
                 <Link href={`/blog/${item.slug}`}>
-                  <a className='underline'>Read more</a>
+                  <div className='flex flex-col my-4 hover:cursor-pointer'>
+                    <h3 className='text-base lg:text-2xl md:my-2 md:w-1/2 flex items-center font-medium'>
+                      {item.frontmatter.title}
+                    </h3>
+                    <p className='text-gray-500'>
+                      {item.frontmatter.date} - {item.frontmatter.tags}
+                    </p>
+                    <p className='text-base md:my-2  font-light md:w-1/2'>
+                      {item.frontmatter.description}
+                    </p>
+
+                    <a className='underline'>Read more</a>
+                  </div>
                 </Link>
               </div>
             ))}

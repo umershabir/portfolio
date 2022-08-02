@@ -18,11 +18,9 @@ export default function Work() {
         />
       </Head>
       <div className='flex flex-col'>
-        <Navbar />
         <main>
           <Working />
         </main>
-        <Footer />
       </div>
     </div>
   )
