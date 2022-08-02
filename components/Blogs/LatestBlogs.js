@@ -22,7 +22,7 @@ export default function LatestBlogs({ posts }) {
             {posts.map((item, index) => (
               <div key={index} className='flex flex-col md:flex-row my-2'>
                 <Link href={`/blog/${item.slug}`}>
-                  <a className='md:w-1/2'>
+                  <div className='md:w-1/2 hover:cursor-pointer'>
                     <h3 className='text-base lg:text-2xl md:my-2 md:w-1/2 flex items-center font-medium'>
                       {item.frontmatter.title}
                     </h3>
@@ -31,7 +31,7 @@ export default function LatestBlogs({ posts }) {
                     </p>
 
                     <a className='underline'>Read more </a>
-                  </a>
+                  </div>
                 </Link>
                 <div className='md:w-1/2'>
                   <Image

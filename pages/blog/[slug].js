@@ -14,8 +14,8 @@ export default function PostPage({ content }) {
     >
       <div className='container mx-auto'>
         <div style={{ width: 800, margin: '0 auto' }}>
-          {/* <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown> */}
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>
+          {/* <ReactMarkdown>{content}</ReactMarkdown> */}
         </div>
       </div>
     </div>
