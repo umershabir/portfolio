@@ -13,7 +13,7 @@ export default function PostPage({ frontmatter, content }) {
       className='w-full pt-6 md:pt-10 '
       style={{ background: theme.bg, color: theme.clr }}
     >
-      <div className='container blog-container px-5'>
+      <div className='container blog-container'>
         <div>
           <div className='flex flex-col items-center justify-center mb-5'>
             <Image
