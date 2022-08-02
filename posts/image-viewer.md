@@ -1,24 +1,23 @@
 ---
 title: 'Custom Image Viewer in React js'
 date: 'july 15 2022'
-tags: 'react.js, next.js, react-modal'
+tags: 'react.js, next.js, react-modal, bootstrap'
 description: 'In this tutorial I try to explain how can you make a custom image viewer in react js using react modal and react useState hook.'
 cover_image: '/images/posts/custom-image-viewer.png'
 ---
 
-# Custom image viewer in react js
-
-In this is tutorial I will explain how can we build a simple custom image viewer.
+In this is tutorial I will explain how can we build a simple custom image viewer.  
+[Tutorial code at github]()
 The library I am going to use in this tutorial is react modal, so let's start.
 I am assuming this that all the boiler plates to get start with react you have done.
 
-## Step 1
+## Step 1:
 
 First I am going to install react modal with this command.
 
 > npm install react-modal
 
-## Step 2
+## Step 2:
 
 Next I am going to render a clickable component, It could be anything a text or a image which can be click and view the image or a link having multiple images to view, In my case there are multiple images to view I will render a simple clickable text to view images Which I will pass as a prop.
 
@@ -28,7 +27,7 @@ export default function ImageViewer() {
 }
 ```
 
-## Step 3
+## Step 3:
 
 Next I am going to make this line clickable by applying onClick function and link it to the react modal.
 
@@ -50,13 +49,14 @@ const openModal => () {
   }
 ```
 
-## Step 4
+## Step 4:
 
 Next step is all about the view how you want to open and view your react modal, in my case it will look like this.  
-![imageViewer!](/src/images/imageviewer.png 'image viewer')  
-you can check this JSX in github,
+![post-image](/images/posts/imageview.png)  
+you can check this JSX in github,  
+[Tutorial code at github]()
 
-## Step 5
+## Step 5:
 
 let's render our images, In my case Images are coming from an API that's why I passed that in a prop, but for the sake of this tutorial I will statically pass an array of some random images.
 
@@ -72,22 +72,20 @@ const images = [
 and map these Images.
 
 ```javascript
-
-              images.map((item, index) => (
-                <img
-                  onClick={() => setImgItem(index)}
-                  key={index}
-                  className={index === imgItem ? 'active-image' : ''}
-                  src={item}
-                  alt=''
-                  style={{
-                    width: '100px',
-                    height: '125px',
-                    margin: '5px',
-                    cursor: 'pointer',
-                  }}
-                  />
-
+images.map((item, index) => (
+<img
+  onClick={() => setImgItem(index)}
+  key={index}
+  className={index === im'active-image' : ''}
+  src={item}
+  alt=''
+  style={{
+    width: '100px',
+    height: '125px',
+    margin: '5px',
+    cursor: 'pointer',
+  }}
+  />
 ```
 
 I styled active image with active class the logic is if image index is equal to ImageItem number add active class by onClicking function which set the image index to image item so the condition equates true and active class added.  
@@ -122,15 +120,16 @@ To view forward image and reverse I just creadet two simple buttons with fontawe
 
 ```javascript
 <button
-                className='btn'
-                style={{ color: '#666666' }}
-                onClick={() =>
-                  setImgItem(imgItem === recordLength ? imgItem : imgItem + 1)
-                }
-              >
+  className='btn'
+  style={{ color: '#666666' }}
+  onClick={() =>
+   setImgItem(imgItem === recordLength ? imgItem : imgItem + 1)
+  }
+ >
 ```
 
 ### Summary
 
 In this article I wanted to help others to view images in react with just simple and low coding technique, I always prefer to code little functionalites rather than using libraries for every little things. I hope you enjoyed it and it helped you.  
 thanks for reading!
+[Tutorial code at github]()

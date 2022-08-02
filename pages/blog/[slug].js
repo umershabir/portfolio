@@ -4,18 +4,29 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import { useSelector } from 'react-redux'
 import CodeBlock from '../../components/CodeBlock'
+import Image from 'next/image'
 // post page
-export default function PostPage({ content }) {
+export default function PostPage({ frontmatter, content }) {
   const theme = useSelector((state) => state.themeChangingReducer.value)
   return (
     <div
-      className='w-full'
-      style={{ background: theme.bg, color: theme.clr, paddingTop: 70 }}
+      className='w-full pt-6 md:pt-10 '
+      style={{ background: theme.bg, color: theme.clr }}
     >
-      <div className='container mx-auto'>
-        <div style={{ width: 800, margin: '0 auto' }}>
+      <div className='container blog-container px-5'>
+        <div>
+          <div className='flex flex-col items-center justify-center mb-5'>
+            <Image
+              src={frontmatter.cover_image}
+              alt='blog-image'
+              width={500}
+              height={250}
+            />
+            <h1>{frontmatter.title}</h1>
+            <small>{frontmatter.date}</small>
+            <small>{frontmatter.tags}</small>
+          </div>
           <ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>
-          {/* <ReactMarkdown>{content}</ReactMarkdown> */}
         </div>
       </div>
     </div>

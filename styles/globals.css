@@ -35,19 +35,27 @@ h5 {
   margin: 15px 0;
 }
 pre {
-  background-color: #fff;
+  background-color: none;
   border-radius: 5px;
   padding: 8px;
   color: aliceblue;
   margin: 15px 0;
   overflow-x: auto;
 }
-code {
+/* code {
   width: 600px;
-}
+} */
 blockquote {
   background-color: #3a4443;
   padding: 15px;
   border-radius: 5px;
   color: aliceblue;
+}
+@media screen and (min-width: 480px) {
+  .blog-container {
+    width: 800px !important;
+  }
+}
+.blog-container {
+  margin: 50px auto !important;
 }
