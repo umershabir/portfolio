@@ -60,12 +60,12 @@ export default function HeroSection() {
           <div className='about-sect flex flex-col items-center md:items-start my-5'>
             <h2 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>About</h2>
             <p className='text-base md:my-2 md:w-1/2 font-light'>
-              I'm BA English from Sargodha University turned to a full time
+              {`I'm BA English from Sargodha University turned to a full time
               JavaScript Developer based in Lahore Pakistan. I'v worded with
               different companies and on various projects you can have a look
               just below, Along my journey I try to sum up all my learning and
               what I have build into blogs to contribute in the open source
-              world.
+              world.`}
             </p>
           </div>
         </div>
