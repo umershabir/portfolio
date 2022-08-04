@@ -60,14 +60,12 @@ export default function HeroSection() {
           <div className='about-sect flex flex-col items-center md:items-start my-5'>
             <h2 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>About</h2>
             <p className='text-base md:my-2 md:w-1/2 font-light'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
-              rerum. Veritatis optio aperiam voluptas minus delectus perferendis
-              sapiente, dignissimos eum odio. Esse saepe praesentium eligendi
-              aspernatur, repudiandae dignissimos rem placeat. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Tempore labore quas id?
-              Modi fugiat explicabo harum itaque ex quam, nostrum aliquam cum
-              dolore, praesentium consectetur suscipit neque consequuntur
-              corporis cupiditate.
+              I'm BA English from Sargodha University turned to a full time
+              JavaScript Developer based in Lahore Pakistan. I'v worded with
+              different companies and on various projects you can have a look
+              just below, Along my journey I try to sum up all my learning and
+              what I have build into blogs to contribute in the open source
+              world.
             </p>
           </div>
         </div>
