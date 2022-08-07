@@ -10,10 +10,7 @@ export default function Footer() {
         <div className='container mx-auto'>
           <div className='flex flex-col justify-center items-center'>
             <div className='flex gap-x-2 text-2xl'>
-              <a
-                href='https://www.linkedin.com/in/umer-shabir-4a8545100/'
-                target='blank'
-              >
+              <a href='https://www.linkedin.com/in/umershabir/' target='blank'>
                 <i className='fab fa-linkedin'></i>
               </a>
               <a href='https://github.com/umershabir' target='blank'>

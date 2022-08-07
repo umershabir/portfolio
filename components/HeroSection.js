@@ -1,6 +1,6 @@
 //dependencies
-import Image from 'next/image'
-import logo from '../sources/images/us.png'
+// import Image from 'next/image'
+// import logo from '../sources/images/us.png'
 import { useSelector } from 'react-redux'
 
 // herosection
@@ -16,9 +16,9 @@ export default function HeroSection() {
       >
         <div className='container mx-auto flex flex-col px-4 md:px-0 pt-4 justify-evenly xl:min-h-screen'>
           <div className='intro-sect flex flex-col items-center md:items-start my-5 gap-y-5'>
-            <div className='avatar'>
+            {/* <div className='avatar'>
               <Image src={logo} width={128} height={128} alt='hero-image' />
-            </div>
+            </div> */}
             <h1 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>
               Hello, {`I'm`} Umer Shabir 👋{' '}
             </h1>
@@ -61,7 +61,7 @@ export default function HeroSection() {
             <h2 className='text-2xl lg:text-5xl md:text-3xl md:my-2'>About</h2>
             <p className='text-base md:my-2 md:w-1/2 font-light'>
               {`I'm BA English from Sargodha University turned to a full time
-              JavaScript Developer based in Lahore Pakistan. I'v worded with
+              JavaScript Developer based in Lahore Pakistan. I've worked with
               different companies and on various projects you can have a look
               just below, Along my journey I try to sum up all my learning and
               what I have build into blogs to contribute in the open source

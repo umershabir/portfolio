@@ -58,6 +58,7 @@ export default function Working() {
                     alt='project-image'
                     className='project-image'
                   />
+                  {console.log(item.image)}
                 </div>
               </div>
             ))}

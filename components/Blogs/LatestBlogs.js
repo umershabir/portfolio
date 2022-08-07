@@ -20,28 +20,30 @@ export default function LatestBlogs({ posts }) {
               Latest Blogs
             </h2>
             {posts.map((item, index) => (
-              <div key={index} className='flex flex-col md:flex-row my-2'>
+              <div key={index} className='hover:cursor-pointer'>
                 <Link href={`/blog/${item.slug}`}>
-                  <div className='md:w-1/2 hover:cursor-pointer'>
-                    <h3 className='text-base lg:text-2xl md:my-2 md:w-1/2 flex items-center font-medium'>
-                      {item.frontmatter.title}
-                    </h3>
-                    <p className='text-base md:my-2  font-light '>
-                      {item.frontmatter.description}
-                    </p>
+                  <div className='flex flex-col md:flex-row my-2'>
+                    <div className='md:w-1/2 '>
+                      <h3 className='text-base lg:text-2xl md:my-2 md:w-1/2 flex items-center font-medium'>
+                        {item.frontmatter.title}
+                      </h3>
+                      <p className='text-base md:my-2  font-light '>
+                        {item.frontmatter.description}
+                      </p>
 
-                    <a className='underline'>Read more </a>
+                      <a className='underline'>Read more </a>
+                    </div>
+                    <div className='md:w-1/2'>
+                      <Image
+                        src={item.frontmatter.cover_image}
+                        width={400}
+                        height={200}
+                        alt='project-image'
+                        className='project-image'
+                      />
+                    </div>
                   </div>
                 </Link>
-                <div className='md:w-1/2'>
-                  <Image
-                    src={item.frontmatter.cover_image}
-                    width={400}
-                    height={200}
-                    alt='project-image'
-                    className='project-image'
-                  />
-                </div>
               </div>
             ))}
           </div>

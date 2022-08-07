@@ -7,7 +7,8 @@ cover_image: '/images/posts/custom-image-viewer.png'
 ---
 
 In this is tutorial I will explain how can we build a simple custom image viewer.  
-[Tutorial code at github]()
+[Tutorial code at github](https://github.com/umershabir/custom-image-viewer)
+
 The library I am going to use in this tutorial is react modal, so let's start.
 I am assuming this that all the boiler plates to get start with react you have done.
 
@@ -54,7 +55,7 @@ const openModal => () {
 Next step is all about the view how you want to open and view your react modal, in my case it will look like this.  
 ![post-image](/images/posts/imageview.png)  
 you can check this JSX in github,  
-[Tutorial code at github]()
+[Tutorial code at github](https://github.com/umershabir/custom-image-viewer)
 
 ## Step 5:
 
@@ -132,4 +133,5 @@ To view forward image and reverse I just creadet two simple buttons with fontawe
 
 In this article I wanted to help others to view images in react with just simple and low coding technique, I always prefer to code little functionalites rather than using libraries for every little things. I hope you enjoyed it and it helped you.  
 thanks for reading!
-[Tutorial code at github]()
+
+[Tutorial code at github](https://github.com/umershabir/custom-image-viewer)

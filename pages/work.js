@@ -1,6 +1,4 @@
 import Head from 'next/dist/shared/lib/head'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import Working from '../components/WorkingHistory/Working'
 export default function Work() {
   return (

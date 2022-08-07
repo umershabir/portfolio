@@ -48,6 +48,7 @@ pre {
 blockquote {
   background-color: #3a4443;
   padding: 15px;
+  margin: 15px 0;
   border-radius: 5px;
   color: aliceblue;
 }

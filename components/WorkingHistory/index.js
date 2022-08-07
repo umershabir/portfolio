@@ -35,13 +35,13 @@ export default function WorkingHistory() {
                   </a>
                 </Link>
                 <div className='md:w-1/2'>
-                  <Image
+                  {/* <Image
                     src={item.image}
                     width={400}
                     height={200}
                     alt='project-image'
                     className='project-image'
-                  />
+                  /> */}
                 </div>
               </div>
             ))}
