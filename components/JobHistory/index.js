@@ -9,7 +9,7 @@ export default function JobHistory() {
   return (
     <>
       <section
-        className='w-full'
+        className='w-full md:p-5'
         style={{ background: theme.bg, color: theme.clr }}
       >
         <div className='container mx-auto px-4 md:px-0'>

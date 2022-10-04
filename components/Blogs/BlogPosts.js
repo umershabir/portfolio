@@ -5,7 +5,7 @@ export default function BlogPosts({ posts }) {
   return (
     <>
       <div
-        className='w-full pt-6 md:pt-9'
+        className='w-full pt-6 md:pt-9 md:p-5'
         style={{ background: theme.bg, color: theme.clr }}
       >
         <div className='container mx-auto flex flex-col px-4 md:px-0 pt-4 mt-5'>

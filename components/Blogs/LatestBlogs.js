@@ -11,7 +11,7 @@ export default function LatestBlogs({ posts }) {
   return (
     <>
       <section
-        className='w-full py-5'
+        className='w-full py-5 md:p-5'
         style={{ background: theme.bg, color: theme.clr }}
       >
         <div className='container mx-auto px-4 md:px-0'>

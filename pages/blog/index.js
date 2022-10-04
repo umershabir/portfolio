@@ -6,11 +6,11 @@ import matter from 'gray-matter'
 // blog page
 export default function Blog({ posts }) {
   return (
-    <div>
+    <div className=''>
       <Head>
         <title>Blogs ✍️</title>
       </Head>
-      <div className='flex flex-col'>
+      <div className='flex flex-col '>
         <BlogPosts posts={posts} />
       </div>
     </div>
