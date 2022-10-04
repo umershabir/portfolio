@@ -15,7 +15,7 @@ export default function Home({ posts }) {
       <Head>
         <title>Umer Shabir</title>
       </Head>
-      <div className='flex flex-col md:p-5'>
+      <div className='flex flex-col'>
         <HeroSection />
         <JobHistory />
         <Services />
